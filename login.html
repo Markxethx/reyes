@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6f7ff; /* Light blue for a clean background */
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container img {
+            width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #0088cc; /* Complementary blue */
+            border-radius: 5px;
+        }
+
+        .login-box input:focus {
+            outline: none;
+            border-color: #0044cc; /* Dark blue for focus effect */
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0044cc; /* Dark blue for buttons */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .login-box button:hover {
+            background-color: #0088cc; /* Lighter blue for hover effect */
+        }
+
+        .sign-up {
+            margin-top: 15px;
+        }
+
+        .sign-up a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0088cc; /* Complementary blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .sign-up a:hover {
+            background-color: #0044cc; /* Darker blue for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/reyes.jpg" alt="Logo">
+        <div class="login-box">
+            <form action="index.html" method="get">
+                <input type="email" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            
+            <div class="sign-up">
+                <a href="#">Don't have an account? Sign up here</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

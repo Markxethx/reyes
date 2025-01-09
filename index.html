@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <title>Reyes Dental Clinic</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="images/reyes.jpg" alt="Reyes Dental Clinic Logo">
+            </a>
+        </div>
+    
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="burger-icon" id="burger-icon">&#9776;</span>
+            <span class="close-icon" id="close-icon">&#10006;</span>
+        </div>
+    </header>
+    
+    <div class="content" id="content">
+        <h2>Reyes Dental Clinic</h2>
+        <h3>"Smiles are a great investment. The more you collect, the better you feel."</h3>
+    </div>
+    
+    
+
+    <div class="service" id="service">
+        <div class="service-contents">
+            <div class="service-header">
+                <h3>Our Services</h3>
+                <h4>Comprehensive Dental Care</h4>
+            </div>
+        </div>
+   
+        <div class="service-content">
+       
+            <!-- Cleaning Services -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="https://th.bing.com/th/id/OIP.fO1r3Yj2lcGh_4IY9e1u2gHaE8?rs=1&pid=ImgDetMain" alt="Cleaning Services">
+                </div>
+                <div class="service-details">
+                    <h2>Teeth Cleaning</h2>
+                    <p>Professional cleaning to remove plaque, tartar, and stains.</p>
+                    <p class="price">P800 - P1200</p>
+                    <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+                </div>
+            </div>
+            <!-- Teeth Whitening -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="https://th.bing.com/th/id/R.637212b32eafa22408c2a03ef9bc1099?rik=EKN%2fnucR6LB42g&riu=http%3a%2f%2fdoctorbookpublishing.com%2fwp-content%2fuploads%2f2014%2f07%2fdental-patient-1.jpg&ehk=XcObJqloP6yOsu82OJ%2bf9Hamu3sbxfrrobyMSRdPI8U%3d&risl=&pid=ImgRaw&r=0" alt="Teeth Whitening">
+                </div>
+                <div class="service-details">
+                    <h2>Teeth Whitening</h2>
+                    <p>Brighten your smile with advanced whitening techniques.</p>
+                    <p class="price">P1500 - P2500</p>
+                    <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+                </div>
+            </div>
+            <!-- Dental Fillings -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="https://www.yourdentistryguide.com/wp-content/uploads/2017/11/dental-filling-min.jpg" alt="Dental Fillings">
+                </div>
+                <div class="service-details">
+                    <h2>Dental Fillings</h2>
+                    <p>Restore teeth damaged by cavities using durable fillings.</p>
+                    <p class="price">P1000 - P2000</p>
+                    <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+                </div>
+            </div>
+          <!-- Dental Braces -->
+          <div class="service-item">
+            <div class="service-image">
+              <img src="https://vossdental.com/wp-content/uploads/2021/01/rubber-bands-for-braces-scaled-1.jpg" alt="Dental Braces">
+            </div>
+            <div class="service-details">
+              <h2>Braces</h2>
+              <p>Align and straighten teeth with traditional or modern braces.</p>
+              <p class="price">P3,000 - P7,000</p>
+              <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+            </div>
+          </div>
+          <!-- Dental Implants -->
+          <div class="service-item">
+            <div class="service-image">
+              <img src="https://www.diamondcourtdental.co.uk/wp-content/uploads/2019/11/implant-pic.jpg" alt="Dental Implants">
+            </div>
+            <div class="service-details">
+              <h2>Dental Implants</h2>
+              <p>Permanently replace missing teeth with natural-looking implants.</p>
+              <p class="price">P1,500 - P4,000 per tooth</p>
+              <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+            </div>
+          </div>
+          <!-- Dentures -->
+          <div class="service-item">
+            <div class="service-image">
+              <img src="https://th.bing.com/th/id/OIP.Q6XaJ_IUFUE1OWPFBoZMrAHaFz?rs=1&pid=ImgDetMain" alt="Dentures">
+            </div>
+            <div class="service-details">
+              <h2>Dentures</h2>
+              <p>Custom-made dentures to restore your smile and functionality.</p>
+              <p class="price">P5000 - P1,500</p>
+              <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+            </div>
+          </div>
+          <!-- Wisdom Tooth Extraction -->
+          <div class="service-item">
+            <div class="service-image">
+              <img src="https://th.bing.com/th/id/OIP.yQrosCmP7Xik7CB0CBWT7AHaE8?w=508&h=339&rs=1&pid=ImgDetMain" alt="Wisdom Tooth Extraction">
+            </div>
+            <div class="service-details">
+              <h2>Wisdom Tooth Extraction</h2>
+              <p>Safely remove impacted or problematic wisdom teeth.</p>
+              <p class="price">P2000 - P3000 per tooth</p>
+              <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+            </div>
+          </div>
+          <!-- Pediatric Dentistry -->
+          <div class="service-item">
+            <div class="service-image">
+              <img src="https://th.bing.com/th/id/OIP.USbQUOXl_jtiXFpMjyIniQHaE8?rs=1&pid=ImgDetMain" alt="Pediatric Dentistry">
+            </div>
+            <div class="service-details">
+              <h2>Pediatric Dentistry</h2>
+              <p>Comprehensive dental care tailored for children.</p>
+              <p class="price">Varies</p>
+              <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+            </div>
+          </div>
+          <!-- Orthodontic Retainers -->
+          <div class="service-item">
+            <div class="service-image">
+              <img src="https://th.bing.com/th/id/OIP.oZed4PE0S8iR6PyeFn3DqQHaE8?rs=1&pid=ImgDetMain" alt="Orthodontic Retainers">
+            </div>
+            <div class="service-details">
+              <h2>Orthodontic Retainers</h2>
+              <p>Maintain your smile post-braces with customized retainers.</p>
+              <p class="price">P1500 - P5000</p>
+              <button class="book-btn" onclick="showBookingMessage()">Book Now</button>
+            </div>
+          </div>
+            <!-- Additional services can be added here -->
+        </div>
+
+        <!-- <div class="right-column">
+            <img src="images/hrs.jpg" alt="Dental Care">
+            <img src="images/cilinic.jpg" alt="Dental Care">
+        </div> -->
+    </div> 
+
+<!-- Pop-up Modal -->
+<div id="bookingPopup" class="popup">
+  <div class="popup-content">
+    <p>We received your booking.</p>
+    <button class="close-btn" onclick="closeBookingPopup()">Close</button>
+  </div>
+</div>
+
+
+    <div class="contact" id="contact">
+        <div class="contact-box">
+            <div class="contact-image">
+                <img src="images/call.jpg" alt="Contact Us">
+            </div>
+        </div>
+        <div class="contact-box">
+            <div class="contact-body">
+                <form>
+                    <h2>Contact Us</h2>
+                    <div class="form-content">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" required>
+                        <label>Message</label>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-box">
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>reyesdentalclinic@gmail.com<br>"THANK YOU"</p>
+            </div>
+            <div class="brand">
+                <span>Reyes Dental Clinic</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // JavaScript to toggle the hamburger menu
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+        const burgerIcon = document.getElementById("burger-icon");
+        const closeIcon = document.getElementById("close-icon");
+
+        // Toggle the navigation menu when clicking the hamburger icon
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
+
+            // Toggle icons
+            if (navMenu.classList.contains("open")) {
+                burgerIcon.style.display = "none"; // Hide burger icon
+                closeIcon.style.display = "block"; // Show close icon
+            } else {
+                burgerIcon.style.display = "block"; // Show burger icon
+                closeIcon.style.display = "none"; // Hide close icon
+            }
+        });
+    </script>
+</body>
+</html>
